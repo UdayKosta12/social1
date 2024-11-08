@@ -1,0 +1,129 @@
+<html>
+
+<head>
+  
+<title>practise..</title>
+
+<script>
+
+function testResults(form){
+
+
+  var a = form.Username.value;
+  var b = form.Password.value;
+//alert("username :" +a);
+//alert("password :" +b);
+
+//console.log("username:"+ a);
+//console.log("password:"+b);
+
+
+document.write("username: "+ a+"<br>")
+document.write("password: "+ b+"<br>")
+
+ 
+window.open("basic-layout.html","_parent");
+}
+
+</script> 
+
+<style>
+ *{
+  margin:0;
+  padding:0;
+}
+body{
+ background-image:url(../Desert.jpg);
+ background-size:cover;
+ background-repeat:no-repeat;
+}
+.content{
+  width:300px;
+  height:400px;
+  margin-left:36%;
+  margin-top:10%;
+  text-align:center;
+  color:white;
+  background-color:black;
+  border-radius:20px;
+}
+ .content.text{
+  position:relative;
+  top:10%;
+}
+.inp1{
+   width:250px;
+   border:none;
+   background-color:black;
+   border-bottom:2px solid white;
+   font-size:18px;
+   margin-top:20px;
+   color:white;
+   outline:none;
+}
+.inp2{
+   width:250px;
+   border:none;
+   background-color:black;
+   border-bottom:2px solid white;
+  font-size:18px;
+  margin-top:20px;
+  color:white;
+  outline:none;
+}
+p{
+ margin-top:30px;
+ font-size:18px;
+}
+p span{
+ color:aqua;
+ cursor:pointer;
+}
+button{
+ width:200px;
+ font-size:15px;
+ height:25px;
+background-color:aqua;
+border-radius:10px;
+color:white;
+border:none;
+ margin-top:20px;
+ cursor:pointer;
+}
+button:hover{
+ border:2px solid aqua;
+ color:white;
+ font-size:15px;
+ background-color:black;
+}
+h1{
+ padding-top:30px;
+}
+</style>
+
+</head>
+
+<body>
+<form>
+<div class = "content">
+  <div class = "text">
+
+   <h1>Login</h1>
+
+   <input class ="inp1" type = "text" name ="Username" placeholder = "Enter Username">
+
+   <input class ="inp2" type = "password" name = "Password" placeholder = "Enter Password">
+   
+<p>Forgot Password</p>
+
+<button onclick ="testResults(this.form)">Login</button>
+
+
+<p>Not a member? <span> Sign Up</span></p>
+ </div><!--end text-->
+ 
+
+</div><!--end content>
+</form>
+</body>
+</html>
