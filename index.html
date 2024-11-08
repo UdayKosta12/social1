@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body{
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #form-contener{
+            background-color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        h2{
+            margin: 0px 0px 10px 0px;
+        }
+        input{
+            width: 200px;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+        input[type="submit"]{
+            width: 222px;
+            background-color: #3498db;
+            border: 0px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id = "form-contener">
+        <h2>Login</h2>
+        <form  onsubmit="return mydata()" action="./basic-layout.html">
+            <input type="text" placeholder="User Name" id="username"><br>
+            <input type="password" placeholder="Password" id="password"><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+ <script>
+
+     function mydata(){
+     var a =document.getElementById("username").value;
+     var b =document.getElementById("password").value;
+
+    if(a =="" || b ==""){
+        alert("All field are mendatory")
+        return false;
+    }else{
+        true;
+    }
+}
+ </script>
+</html>
