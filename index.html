@@ -51,9 +51,19 @@
      var b =document.getElementById("password").value;
 
     if(a =="" || b ==""){
-        alert("All field are mendatory")
+        alert("All Field are mendatory")
         return false;
-    }else{
+    }
+    else if(b.length <10 || b.length >10){
+        alert("Number should be of the 10 Digits ")
+        return false;
+    }
+    else if(isNaN(b)){
+        alert("Only Number are allow")
+        return false;
+    
+    }    
+    else{
         true;
     }
 }
